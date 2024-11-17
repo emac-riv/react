@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hero = () => {
+const Hero = (darkMode) => {
   return (
     <div>
       <div className="gradient">
@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
             <div className="next-arrow">
               <button>
-              <img src="/images/next-btn.svg" alt="Pil neråt"/>
+              <img src={darkMode ? "/images/next-btn-dark.svg" : "/images/next-btn.svg"} alt="Pil neråt" />
               <p>Discover more</p>
               </button>   
           </div>

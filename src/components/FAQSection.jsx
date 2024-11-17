@@ -41,45 +41,6 @@ const FAQSection = () => {
                return <FaqItem key={item.id} title={item.title} content={item.content} />
             })
           }
-          {/* <div className="faq-item">
-            <div className="faq-questions">
-              <h3>Is any of my personal information stored in the App?</h3>
-              <img src="/images/more-arrow.svg" alt="" />
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-questions">
-              <h3>What formats can I download my transaction history in?</h3>
-              <img src="/images/more-arrow.svg" alt="" />
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-questions">
-              <h3>Can I schedule future transfers?</h3>
-              <img src="/images/arrow-up.svg" alt="" />
-            </div>
-            <div className="faq-answer">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, maiores ut, beatae odio possimus nihil, non voluptas magni distinctio iste tempora at. Nulla, ducimus et quo corporis est quam non perferendis delectus soluta cumque, ad tempore odio eius veritatis iusto impedit distinctio ut molestiae beatae. Corporis quidem quam soluta excepturi.</p>
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-questions">
-              <h3>When can I use Banking App services?</h3>
-              <img src="/images/more-arrow.svg" alt="" />
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-questions">
-              <h3>Can I create my own password that is easy for me to remember?</h3>
-              <img src="/images/more-arrow.svg" alt="" />
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-questions">
-              <h3>What happens if I forget or lose my password?</h3>
-              <img src="/images/more-arrow.svg" alt="" />
-            </div>
-          </div> */}
         </div>
       </section>
     </div>

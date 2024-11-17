@@ -1,16 +1,16 @@
 import React from 'react'
 
-const Features = () => {
+const Features = ({darkMode}) => {
   return (
     <div>
         <section className="features">
             <div className="logos">
-                <img src="/images/logo.svg" alt=""/>
-                <img src="/images/logo (1).svg" alt=""/>
-                <img src="/images/logo (6).svg" alt=""/>
-                <img src="/images/logoipssum.svg" alt=""/>
-                <img src="/images/logoipsum2.svg" alt=""/>
-                <img src="/images/logoipsum3.svg" alt=""/>
+            <img src= {darkMode ?  "/images/logo1-dark-mode.svg":"/images/logo1.svg"} alt=""/>               
+            <img src= {darkMode ?  "/images/logo2-dark-mode.svg":"/images/logo2.svg"} alt=""/>
+            <img src= {darkMode ?  "/images/logo3-dark-mode.svg":"/images/logo3.svg"} alt=""/>
+            <img src= {darkMode ?  "/images/logo4-dark-mode.svg":"/images/logo4.svg"} alt=""/>
+            <img src= {darkMode ?  "/images/logo5-dark-mode.svg":"/images/logo5.svg"} alt=""/>
+            <img src= {darkMode ?  "/images/logo6-dark-mode.svg":"/images/logo6.svg"} alt=""/>
             </div>    
 
        <div className="features-container">

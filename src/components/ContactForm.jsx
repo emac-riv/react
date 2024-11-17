@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const ContactForm = () => {
-    const [FullName, setFullName] = useState('')
+    const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [specialist, setSpecialist] = useState('')
     const [error, setError] = useState('')
@@ -9,11 +9,14 @@ const ContactForm = () => {
     const handleSubmit = e => {
         e.preventDefault();
         if (!fullName || !email || !specialist) {
-            setError ('Fyll i alla fält!');
+            setError ('Please fill in all fields!');
         }
         else {
-            setError ('');
-            alert ('Formuläret skickat!')
+            setError ('')
+            alert ('Form submitted. Thank you!')
+            setFullName ('')
+            setEmail ('')
+            setSpecialist ('')
         }
     }
 
@@ -43,10 +46,17 @@ const ContactForm = () => {
             </div>
             <div className='contact-right'>
                 <h2>Get Online Consultation</h2>
-                <form className='consultation-form'>
-                    <input type="text" placeholder="Full name" required/>
-                    <input type="email" placeholder="Email Adress" required/>
-                    <input type="text" placeholder="Specialist" required/>
+                <form className='consultation-form' onSubmit={handleSubmit}>
+                    <input type="text" placeholder="Full name"  value={fullName}
+                            onChange={(e) => setFullName(e.target.value)}
+                            required/>
+                    <input type="email" placeholder="Email Adress"  value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required/>
+                    <input type="text" placeholder="Specialist"  value={specialist}
+                            onChange={(e) => setSpecialist(e.target.value)}
+                            required/>
+                    {error && <p style={{ color: 'red' }}>{error}</p>}
                     <button type='submit'>Make an appointment</button>                    
                 </form>
             </div>
